@@ -32,7 +32,11 @@ h3{font-size:22px;font-weight:540;letter-spacing:-.02em;margin-bottom:8px}
 .pill{display:inline-block;font-size:16px;font-weight:500;padding:8px 16px;border:1px solid #d3cec8;border-radius:999px;transition:border-color .2s}
 .pill:hover{border-color:var(--accent)}
 
-.foot{display:flex;justify-content:space-between;gap:16px;border-top:1px solid var(--line);padding-top:22px;padding-bottom:32px;font-size:13px;color:var(--muted)}
+.foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;border-top:1px solid var(--line);padding-top:22px;padding-bottom:32px;font-size:13px;color:var(--muted)}
+
+.flinks{display:flex;gap:18px}
+.flinks a{color:var(--muted);transition:color .2s}
+.flinks a:hover{color:var(--ink)}
 
 @media (prefers-reduced-motion:no-preference){
   .hero h1,.hero .sub,.services{animation:rise .8s cubic-bezier(.2,.7,.2,1) both}
