@@ -38,6 +38,13 @@ h3{font-size:22px;font-weight:540;letter-spacing:-.02em;margin-bottom:8px}
 .flinks a{color:var(--muted);transition:color .2s}
 .flinks a:hover{color:var(--ink)}
 
+.hero-sm{padding-top:clamp(48px,9vh,96px);padding-bottom:clamp(40px,7vh,80px)}
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:0 40px;counter-reset:s}
+.steps li{border-top:1px solid #d3cec8;padding-top:20px;max-width:22em;counter-increment:s}
+.steps h3::before{content:counter(s) ". ";color:var(--accent)}
+.steps p{color:var(--muted);font-size:16px}
+.steps .links{margin-top:16px}
+
 @media (prefers-reduced-motion:no-preference){
   .hero h1,.hero .sub,.services{animation:rise .8s cubic-bezier(.2,.7,.2,1) both}
   .hero .sub{animation-delay:.12s}
@@ -50,6 +57,6 @@ h3{font-size:22px;font-weight:540;letter-spacing:-.02em;margin-bottom:8px}
   .logo{height:56px;margin-left:-6px}
   .hero{padding-top:64px;padding-bottom:64px}
   h1{font-size:38px;letter-spacing:-.04em}
-  .svc{grid-template-columns:1fr;gap:28px}
+  .svc,.steps{grid-template-columns:1fr;gap:28px}
   .grid{grid-template-columns:1fr 1fr}
 }

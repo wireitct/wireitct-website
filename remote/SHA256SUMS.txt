@@ -1,0 +1,2 @@
+319206042390ebfcba934cf0baa2f612f34de463c78c843b7cb8c22097c4bf7b  rustdesk-host=32.221.145.52,key=PHR3q7ZMF7Qxq2OKKNsy6EzXFeVeqFP8b3ha4gqTkps=,.exe
+# = official https://github.com/rustdesk/rustdesk/releases/download/1.5.1/rustdesk-1.5.1-x86_64.exe, unmodified, renamed
